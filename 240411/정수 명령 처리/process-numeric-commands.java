@@ -30,6 +30,14 @@ public class Main {
                     System.out.println(-1);
                 }
             }
+            if(tokens[0].equals("top")){
+                if(!stack.isEmpty()) {
+                    int b = stack.peek();
+                    System.out.println(b);
+                } else {
+                    System.out.println(-1);
+                }
+            }
         }
     }
 }
