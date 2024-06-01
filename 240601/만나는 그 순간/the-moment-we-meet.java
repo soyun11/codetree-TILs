@@ -22,12 +22,11 @@ public class Main {
                 Aindex++;
                 if(dir=='R'){
                     Acurrent++;
-                    A[Aindex]=Acurrent;
                 }
                 else{//dir='L'
                     Acurrent--;
-                    A[Aindex]=Acurrent;
                 }
+                A[Aindex]=Acurrent;
             }
            
         }
@@ -39,18 +38,24 @@ public class Main {
                 Bindex++;
                 if(dir=='R'){
                     Bcurrent++;
-                    B[Bindex]=Bcurrent;
                 }
                 else{//dir='L'
                     Bcurrent--;
-                    B[Bindex]=Bcurrent;
                 }
+                B[Bindex]=Bcurrent;
             }
            
         }
 
         int success=0;
-        for(int i=1;i<=Aindex;i++){
+        int index=0;
+        if(Aindex>Bindex){
+            index=Aindex;
+        }
+        else{
+            index=Bindex;
+        }
+        for(int i=1;i<=index;i++){
             if(A[i]==B[i]){
                 System.out.println(i);
                 success=1;
@@ -60,6 +65,7 @@ public class Main {
         if(success==0){
             System.out.println(-1);
         }
+        scanner.close();
 
     }
 }
