@@ -5,9 +5,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int n=scanner.nextInt();
         int m=scanner.nextInt();
-        int[]A=new int[100];
+        int[]A=new int[100000];
         A[0]=0; //A의 초기위치
-        int[]B=new int[100];
+        int[]B=new int[100000];
         B[0]=0;  //B의 초기위치
         int Acurrent=0;//현재 A위치
         int Aindex=0;
