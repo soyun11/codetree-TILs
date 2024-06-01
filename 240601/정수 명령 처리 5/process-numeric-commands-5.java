@@ -17,7 +17,7 @@ public class Main {
     }
     public static void get(){
         int data=sc.nextInt();
-        System.out.println(v.indexOf(data));
+        System.out.println(v(data));
     }
     public static void main(String[] args){
         int n=sc.nextInt();
@@ -26,13 +26,13 @@ public class Main {
             if(a.equals("push_back")){
                 push_back();
             }
-            if(a.equals("pop_back")){
+            else if(a.equals("pop_back")){
                 pop_back();
             }
-            if(a.equals("size")){
+            else if(a.equals("size")){
                 size();
             }
-            if(a.equals("get")){
+            else if(a.equals("get")){
                 get();
             }
         }
