@@ -48,8 +48,8 @@ public class Main {
         }
 // A와 B의 최초 만나는 시간 찾기
         int success = -1;
-        int maxLength = Math.max(Aindex, Bindex); // 두 배열의 최대 길이
-        for (int i = 1; i <= maxLength; i++) {
+        int minLength = Math.min(Aindex, Bindex); // 두 배열의 최소 길이
+        for (int i = 1; i <= minLength; i++) {
             if (A[i] == B[i]) {
                 success = i;
                 break;
