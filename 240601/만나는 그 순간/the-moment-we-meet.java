@@ -46,25 +46,20 @@ public class Main {
             }
            
         }
-
-        int success=0;
-        int index=0;
-        if(Aindex>Bindex){
-            index=Aindex;
-        }
-        else{
-            index=Bindex;
-        }
-        for(int i=1;i<=index;i++){
-            if(A[i]==B[i]){
-                System.out.println(i);
-                success=1;
+// A와 B의 최초 만나는 시간 찾기
+        int success = -1;
+        int maxLength = Math.max(Aindex, Bindex); // 두 배열의 최대 길이
+        for (int i = 1; i <= maxLength; i++) {
+            if (A[i] == B[i]) {
+                success = i;
                 break;
             }
         }
-        if(success==0){
-            System.out.println(-1);
-        }
+        
+        // 결과 출력
+        System.out.println(success);
+
+        // Scanner 닫기
         scanner.close();
 
     }
