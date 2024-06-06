@@ -19,10 +19,6 @@ public class Main {
                 if(s1.length()>s3.length()){//s1>s3>s2
                     p=s1.length()-s2.length(); 
                 }
-                else if(s3.length()>s1.length()){//s3>s1>s2
-                    p=s3.length()-s2.length();
-                }
-                
             }
         }
         else if(s2.length()>s1.length()){//s2>s1
