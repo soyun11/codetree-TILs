@@ -17,7 +17,7 @@ public class Main {
                 len+=arr[i].length();
             }
         }
-        float average=len/sum;
+        float average=(float)len/sum;
         System.out.print(sum+" ");
         System.out.printf("%.2f\n",average);
     }
